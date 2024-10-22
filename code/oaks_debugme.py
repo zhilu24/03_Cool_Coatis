@@ -16,7 +16,7 @@ def is_an_oak(name):
    
 
 def main(argv): 
-    with open('../data/TestOaksData.csv','r') as f, open('../data/JustOaksData.csv','w') as g:
+    with open('../data/TestOaksData.csv','r') as f, open('../results/JustOaksData.csv','w') as g:
         taxa = csv.reader(f)
         csvwrite = csv.writer(g)
         csvwrite.writerow(['Genus', ' species'])  # Add the headers you want in the output file
