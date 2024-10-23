@@ -1,13 +1,15 @@
 ## Anna's work for the group 03 Cool Coatis
 
 ## Description
-- oaks_debugme.py takes a CSV file from the data folder. It then finds all the "Quercus" and prints them out on a new CSV which is stored in the results folder.
+- **oaks_debugme.py** takes a CSV file from the data folder. It then finds all the "Quercus" and prints them out on a new CSV which is stored in the results folder.
+- **align_seqs_better.py** takes CSV file containing 2 DNA sequences, it finds the best alignment(s) and prints it put on another file in Results folder. 
 
 ## Languages 
 - Python
 
 ## Dependencies
 **ipdb** : for enhanced debugging.
+
 
 ## Installation
 pip install ipdb
@@ -20,5 +22,9 @@ The data stored in the Data folder is utilized by the code scripts located in th
 
 
 ## Author
-   Anna Cavalieri Canosa
-    	ac524@ic.ac.uk
+Anna Cavalieri Canosa
+    ac524@ic.ac.uk
+Bridget Smith
+    bs2324@ic.ac.uk
+
+    
