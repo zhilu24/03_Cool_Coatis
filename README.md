@@ -1,4 +1,4 @@
-## Anna's work for the group 03 Cool Coatis
+## Groupwork 03 Cool Coatis
 
 ## Description
 - **oaks_debugme.py** takes a CSV file from the data folder. It then finds all the "Quercus" and prints them out on a new CSV which is stored in the results folder.
