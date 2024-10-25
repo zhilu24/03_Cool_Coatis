@@ -2,6 +2,7 @@ import csv
 import sys
 import ipdb
 import doctest
+from fuzzywuzzy import fuzz
 #Define function
 def is_an_oak(name):
     """
@@ -13,6 +14,11 @@ def is_an_oak(name):
     """
     """ Returns True if name is starts with 'quercus' """
     return name.lower() == 'quercus'
+    genus = name.split()[0]
+    threshold = 85
+ 
+    similarity = fuzz.ratio(name.split()[0], 'quercus')
+    return similarity >= threshold
    
 
 def main(argv): 
@@ -47,5 +53,3 @@ if (__name__ == "__main__"):
 doctest.testmod(verbose=True)
 
 
-
-#####Modify your doctests approriately, and modify your script such that it can handle cases where there is a typo (such as ‘Quercuss’) or there is a genus name that is not strictly ‘Quercus’.??????????
