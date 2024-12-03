@@ -1,11 +1,5 @@
 library(tidyverse)
 
-getwd()
-
-setwd("D:/Rcoursework/data")
-
-MyDF <- read.csv("EcolArchives-E089-51-D1.csv")
-
 # Cleaning up the environment
 
 rm(list = ls())
@@ -91,3 +85,8 @@ output <- data.frame(
 # Apply the linear model function to each subset and combine the results
 
 PP_Regress_Results <- bind_rows(lapply(MyDF.subsets, lm.function)) 
+
+# Output results to CSV file
+
+write.csv(na.omit(PP_Regress_Results), file = "../results/PP_Regress_Results.csv")
+ 
